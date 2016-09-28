@@ -24,9 +24,9 @@
   // to a variable containing an anonymous
   // function
 
-  function doSomethingCool() {
-    console.log("Something Cool!");
-  }
+  // function doSomethingCool() {
+  //   console.log("Something Cool!");
+  // }
 
   // Put your answer below -------------------------
 var doSomethingCool = function(){
@@ -124,23 +124,23 @@ console.log(returnValue);
   // Refactor this function to use an object
   // instead of an if/else statement.
 
-  var spanishColor = function(colorName) {
-    if (colorName.toLowerCase() === "rojo") {
-      return "#ff0000";
-    }
-    else if (colorName.toLowerCase() === "blanco") {
-      return "#ffffff";
-    }
-    else if (colorName.toLowerCase() === "azul") {
-      return "#0000ff";
-    }
-    else if (colorName.toLowerCase() === "verde") {
-      return "#00ff00";
-    }
-    else if (colorName.toLowerCase() === "negro") {
-      return "#000000";
-    }
-  };
+  // var spanishColor = function(colorName) {
+  //   if (colorName.toLowerCase() === "rojo") {
+  //     return "#ff0000";
+  //   }
+  //   else if (colorName.toLowerCase() === "blanco") {
+  //     return "#ffffff";
+  //   }
+  //   else if (colorName.toLowerCase() === "azul") {
+  //     return "#0000ff";
+  //   }
+  //   else if (colorName.toLowerCase() === "verde") {
+  //     return "#00ff00";
+  //   }
+  //   else if (colorName.toLowerCase() === "negro") {
+  //     return "#000000";
+  //   }
+  // };
 
   // Put your answer below -------------------------
 var spanishColor = function(colorName){
@@ -218,15 +218,15 @@ callNtimes(doSomethingCool);
 
   // HINT: "global scope"
 
-  var score = 0;
-
-  var increaseScore = function() {
-    score++;
-  };
-
-  var decreaseScore = function() {
-    score--;
-  };
+  // var score = 0;
+  //
+  // var increaseScore = function() {
+  //   score++;
+  // };
+  //
+  // var decreaseScore = function() {
+  //   score--;
+  // };
 
   // Put your answer below -------------------------
 (function(){
@@ -251,11 +251,11 @@ callNtimes(doSomethingCool);
   // twoPlusTwo gets set to `undefined`. Refactor
   // the function to make it work.
 
-  var addNumbers = function(numberA, numberB) {
-    console.log(numberA + numberB);
-  };
-
-  var twoPlusTwo = addNumbers(2,2);
+  // var addNumbers = function(numberA, numberB) {
+  //   console.log(numberA + numberB);
+  // };
+  //
+  // var twoPlusTwo = addNumbers(2,2);
 
   // Put your answer below -------------------------
 
@@ -281,15 +281,27 @@ callNtimes(doSomethingCool);
   // Then refactor the function to have a default
   // amount of 1 if no param is given.
 
-  var speed = 0;
-
-  var accelerate = function(amount) {
-    speed += amount;
-  };
+  // var speed= 0;
+  //
+  // var accelerate = function(amount) {
+  //   console.log(speed += amount);
+  // };
 
   // Put your answer below -------------------------
+  //when you add a number to something that is NaN you get NaN
+  var speed= 10;
 
-
+  var accelerate = function(amount) {
+    if (amount== undefined) {
+      var amount = 1;
+      speed= speed + amount;
+    }
+    else {
+      speed = speed + amount;
+    }
+    return speed;
+  };
+console.log(accelerate(43));
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
