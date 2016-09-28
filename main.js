@@ -143,31 +143,18 @@ console.log(returnValue);
   };
 
   // Put your answer below -------------------------
-var hexValue = function(){ 
-var spanishColors ={
+var spanishColor = function(colorName){
+var colorList ={
   rojo :"#ff0000",
   blanco :  "#ffffff",
   azul : "#0000ff",
   verde :"#00ff00",
   negro :"#000000"
 }
+return colorList[colorName.toLowerCase()];
 }
+console.log(spanishColor('verde'));
 
-// var rojo = {
-//  "hexValue" : "#ff0000"
-// }
-// var blanco= {
-// "hexValue" : "#ffffff"
-// }
-// var azul = {
-// "hexValue": "#0000ff"
-// }
-// var verde= {
-// "hexValue" : "#00ff00"
-// }
-// var negro= {
-// "hexValue" : "#000000"
-// }
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -269,7 +256,7 @@ callNtimes(doSomethingCool);
   };
 
   var twoPlusTwo = addNumbers(2,2);
-console.log(twoPlusTwo);
+
   // Put your answer below -------------------------
 
   var addNumbers = function(numberA, numberB) {
