@@ -51,10 +51,10 @@ var somethingCool = doSomethingCool();
   // setTimeout(sayHi, 2000);
 
   // Put your answer below -------------------------
-// var sayHi = function(){
-//   alert("Hello, World!");
-// };
-// setTimeout(sayHi, 2000);
+var sayHi = function(){
+  alert("Hello, World!");
+};
+setTimeout(sayHi, 2000);
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -294,14 +294,12 @@ callNtimes(doSomethingCool);
   var accelerate = function(amount) {
     if (amount== undefined) {
       var amount = 1;
-      speed= speed + amount;
     }
-    else {
-      speed = speed + amount;
-    }
+    speed= speed + amount;
     return speed;
   };
-console.log(accelerate(43));
+  console.log(accelerate());
+  console.log(accelerate(43));
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
